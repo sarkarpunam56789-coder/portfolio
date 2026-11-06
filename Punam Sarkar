@@ -1,0 +1,1078 @@
+// ======================================================================
+// ALL EDITABLE TEXT LIVES HERE. Change the words, save, commit: the site
+// updates. The resume is NOT edited here: replace public/resume.pdf.
+// ======================================================================
+export const site = {
+  name: 'Punam Sarkar',
+  title: 'Punam Sarkar — UI/UX Designer, open to paid internships',
+  description: 'UI/UX designer with a 3-month internship at Scratchly designing CRM and dashboard interfaces. Available for paid UI/UX internships and junior roles.',
+  email: 'sarkarpunam56789@gmail.com',
+  linkedin: 'https://linkedin.com/in/punamsarkar',
+  behance: 'https://behance.net/punamsarkar3',
+  location: 'Agartala, Tripura',
+  resume: { file: '/resume.pdf', downloadName: 'Punam_Sarkar_UIUX_Resume.pdf' },
+
+  hero: {
+    badge: 'Available for paid UI/UX internships and junior roles',
+    title: 'UI/UX designer for CRM, dashboards and product interfaces.',
+    text: 'I’m Punam Sarkar. I spent three months as a UX/UI Design Intern at Scratchly, designing CRM workflows, dashboards and inventory screens for a real product. Google UX Design certified. I work in Figma.',
+    ledgerTitle: 'Scratchly internship',
+    ledgerText: 'Jun–Aug 2026 · 3 months · UX/UI Design Intern. Designed:',
+    ledger: ['Leads', 'Deals', 'Activities', 'Messages', 'Reports', 'Team workflows', 'Inventory management', 'Landing page', 'User flows'],
+  },
+
+  about: {
+    title: 'Thoughtful design, driven by curiosity.',
+    paragraphs: [
+      'I’m Punam, a UX/UI designer who enjoys making digital products easier to understand and use.',
+      'During my three-month internship at Scratchly, I worked on CRM workflows, dashboards, inventory management interfaces, landing pages and user flows. That experience showed me how design decisions connect user needs with business requirements.',
+      'I enjoy exploring problems, organizing information and turning ideas into clear, functional interfaces. I’m still growing my skills in UX, UI and product design, and I’m looking for a paid internship or junior role where I can do that on a real product team.',
+    ],
+  },
+
+  experience: [{
+    role: 'UX/UI Design Intern', company: 'Scratchly', dates: 'Jun–Aug 2026 (3 months)',
+    bullets: [
+      'Designed CRM screens in Figma for leads, deals, activities, messages, reports and team workflows.',
+      'Created inventory-management screens, landing-page UI and user flows from product requirements.',
+      'Iterated on layouts and navigation so multi-step business tasks were easier to follow.',
+    ],
+    link: { href: '/projects/scratchly-crm-dashboard', label: 'Read the case study' },
+  }],
+
+  skills: [
+    { group: 'UX and product', items: ['User flows', 'Information architecture', 'Wireframing', 'High-fidelity prototyping', 'Interaction design', 'UX problem framing'] },
+    { group: 'UI design', items: ['Interface design', 'Dashboard design', 'CRM design', 'Landing pages', 'Mobile UI', 'Visual hierarchy'] },
+    { group: 'Tools', items: ['Figma (Auto Layout, components, prototyping)', 'Framer', 'Notion', 'Claude AI'] },
+  ],
+
+  education: [{ name: 'Bachelor of Computer Applications (BCA)', by: 'Manipal University Jaipur', when: 'Expected 2026' }],
+  certificates: [{ name: 'Google UX Design Professional Certificate', by: 'Coursera', when: 'November 2025' }],
+
+  contact: {
+    title: 'Hire me for a paid UI/UX internship',
+    text: 'I’m available for paid UI/UX internships and junior designer roles. Email me, find me on LinkedIn or Behance, or read my resume.',
+  },
+
+  // ---------------------------------------------------------------
+  // PROJECTS. To add screenshots: put the image in public/images and add
+  // { src:'/images/name.jpg', alt:'what it shows', caption:'…', w:1200, h:800 }
+  // to that project’s "images" list. An empty list is hidden automatically.
+  // ---------------------------------------------------------------
+  projects: [
+    {
+      slug: 'scratchly-crm-dashboard', title: 'Scratchly CRM & Dashboard', tag: 'Internship project · Web app',
+      card: 'Screens and flows for Leads, Deals, Activities, Messages, Reports, Team workflows and inventory management, designed during my 3-month internship.',
+      intro: 'A real product project from my UX/UI design internship at Scratchly: CRM workflows, dashboards and business management interfaces that simplify complex operations.',
+      meta: [['Role', 'UX/UI Design Intern'], ['Duration', 'Jun–Aug 2026 (3 months)'], ['Tools', 'Figma, Notion'], ['Type', 'Internship project']],
+      chips: ['Leads', 'Deals', 'Activities', 'Messages', 'Reports', 'Team workflows', 'Inventory management', 'Landing page', 'User flows'],
+      images: [],
+      sections: [
+        ['Overview', 'Scratchly is a product-focused project I worked on during my UX/UI internship. My work involved designing CRM workflows, dashboards, inventory management interfaces, landing pages and user flows to support business operations and improve usability.'],
+        ['The challenge', 'CRM platforms hold large amounts of data and many workflows. The challenge was to organize information so users can quickly reach important tasks, track progress and manage business activities without feeling overwhelmed.'],
+        ['Design goals', ['Make workflows efficient to follow', 'Design clear dashboard experiences', 'Simplify CRM navigation', 'Create scalable interfaces for business operations', 'Support decisions through organized information architecture']],
+        ['My responsibilities', ['CRM design', 'Dashboard design', 'Inventory management interfaces', 'User flow creation', 'Landing page design', 'Wireframing and UI design', 'Design iterations based on product requirements']],
+        ['Process', 'I started by understanding product requirements and business workflows. After mapping user flows, I created wireframes and dashboard structures focused on clarity and usability, then refined them through multiple iterations so information stayed organized and easy to navigate.'],
+        ['Design decisions', 'I focused on information hierarchy and workflow efficiency. Clear navigation, structured layouts and consistent components were used to help users manage leads, activities, inventory and reports.'],
+        ['What I delivered', 'CRM and dashboard designs covering leads, activities, inventory and reports, refined over several iterations against product requirements.'],
+        ['What I learned', 'Working from real product requirements taught me to balance user needs with business goals.'],
+      ],
+    },
+    {
+      slug: 'earthpulse-ai', title: 'EarthPulse AI', tag: 'Self-initiated concept · Web platform · Version 2.0',
+      card: 'A sustainability platform concept that turns environmental data into one Earth score and a clear next action. Includes an interactive Version 2.0 prototype.',
+      intro: 'EarthPulse AI is a self-initiated product concept that makes sustainability insights more accessible through AI. Version 1 covered brand, landing page and dashboard. Version 2.0 rebuilds the idea around one Earth score and a next best action.',
+      meta: [['Role', 'UX/UI Designer'], ['Version 1', '2 months, Figma'], ['Version 2.0', 'Interactive prototype'], ['Tools', 'Figma, Claude AI']],
+      cover: { src: '/images/ep-dashboard.jpg', w: 1091, h: 748 },
+      embed: { src: '/earthpulse-v2.html', title: 'EarthPulse AI Version 2.0 interactive case study and prototype', heading: 'Version 2.0: interactive case study and prototype', text: 'Connect sources, see a score, add the recommended action and try the AI Coach. All numbers are illustrative sample data and the coach uses scripted replies.' },
+      images: [
+        { src: '/images/ep-hero.jpg', alt: 'EarthPulse AI version 1 landing page hero with headline and two buttons over a green globe photo', caption: 'Version 1: landing page hero', w: 1091, h: 639 },
+        { src: '/images/ep-journey.jpg', alt: 'Five-stage user journey: Discovers, Landing page visitor, Signs up and connects accounts, First dashboard view, Week 3 habit formed', caption: 'Version 1: concept user journey for the persona Maya', w: 1091, h: 411 },
+        { src: '/images/ep-dashboard.jpg', alt: 'EarthPulse version 1 dashboard with sidebar, summary cards, carbon chart, Earth score ring, and goals and community panels', caption: 'Version 1: dashboard (sample data)', w: 1091, h: 748 },
+        { src: '/images/ep-steps.jpg', alt: 'Three setup steps: Connect your data, See your impact, Act on AI insights', caption: 'Version 1: three-step setup', w: 1091, h: 374 },
+      ],
+      sections: [
+        ['Overview', 'EarthPulse AI is a concept platform that explores how artificial intelligence can support sustainability by making environmental insights accessible and actionable. The goal was a modern digital experience that explains complex information simply.'],
+        ['The challenge', 'Sustainability platforms often present large amounts of technical information that can feel overwhelming. The challenge was to design an experience that feels approachable while staying credible and clear.'],
+        ['Goals', ['Create a modern AI-focused brand identity', 'Present sustainability insights in an easy-to-understand format', 'Design an engaging landing page', 'Build trust through clear communication and visual hierarchy']],
+        ['Process', 'I researched sustainability-focused platforms and AI products to understand common design patterns and user expectations. I then created wireframes, explored visual directions and developed the final interface. To plan the experience, I mapped a concept user journey for a persona, Maya, from discovering the product to forming a habit in week three. The persona is a concept based on my review of existing tools, not on interviews.'],
+        ['Design decisions', ['One score: a single 0–100 Earth score answers “how am I doing?” before showing detail.', 'Next best action: a recommendation next to the score, with a “Why this?” explanation.', 'Three-step setup: connect your data, see your impact, act on AI insights, with a privacy panel before any data is requested.', 'Deep green with separate data colours, and 44px minimum tap targets.']],
+        ['What changed in Version 2.0', ['Removed invented statistics, testimonials and unproven research claims.', 'Added a next best action, onboarding, an AI Coach and a mobile dashboard.', 'Fixed contradictory dashboard data and inconsistent labels.']],
+        ['Information architecture', ['Dashboard: Overview, Carbon tracker, Water usage, Waste tracking, Sustainability score', 'My goals: Goals, Achievements, Milestones, Eco challenge', 'Chat assistant: AI coach, Action plans, Recommendations, Insights feed', 'Community: Leaderboard, Team challenges, Friends, Local groups', 'Account: Report and export, Integration, Settings, Billing']],
+        ['What I would test next', ['Can a new user connect a source and see a score quickly?', 'Do users understand what the Earth score means?', 'Which suggested action do people choose first?']],
+        ['A note on the data', 'This is a concept and has not been tested with users. All numbers shown are illustrative sample data, not real user or environmental data.'],
+      ],
+    },
+    {
+      slug: 'daily-habit-journal', title: 'Daily Habit Journal', tag: 'Self-initiated concept · Mobile app',
+      card: 'A lightweight habit tracker and journal designed so daily logging feels simple and motivating.',
+      intro: 'A habit-tracking and journaling mobile app concept that helps users build routines, reflect on progress and stay consistent through a simple, motivating experience.',
+      meta: [['Role', 'UI/UX Designer'], ['Duration', '2 weeks'], ['Tools', 'Figma'], ['Type', 'Self-initiated concept']],
+      images: [],
+      sections: [
+        ['Overview', 'Daily Habit Journal is a mobile app concept that helps users build positive habits, track daily progress and reflect on personal growth, without unnecessary complexity.'],
+        ['The challenge', 'Many habit and journaling apps become hard to keep up because they demand too much effort or show too much at once. The challenge was an experience that feels lightweight, motivating and easy to use every day.'],
+        ['Goals', ['Encourage daily habit tracking', 'Make journaling simple and accessible', 'Encourage consistent daily use', 'Create a clean, distraction-free experience', 'Help users see their progress over time']],
+        ['Process', 'I explored how people track habits and keep daily routines, then mapped user flows, created wireframes and designed interfaces focused on simplicity, clarity and motivation.'],
+        ['Design decisions', 'The design is minimal and easy to use. Clean layouts, clear visual hierarchy and encouraging progress indicators help users log habits quickly, review progress and stay motivated without feeling pressured.'],
+        ['Outcome', 'A mobile journaling and habit-tracking experience that combines daily reflection, goal tracking and progress visualization in a way that feels intuitive and rewarding to use.'],
+      ],
+    },
+  ],
+};
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EarthPulse AI v2.0 — Case study and prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;800&display=swap">
+<style>
+:root{--bg:#F7FAF5;--paper:#fff;--tint:#EAF3E6;--ink:#14231B;--soft:#4A5D52;--g:#166A43;--on:#fff;--line:#DCE6DA;--forest:#12301F;--fi:#EAF3E6;--blue:#2B7BB9;--amber:#B9800F;--d:'Plus Jakarta Sans',system-ui,sans-serif;--b:Inter,system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A14;--paper:#16241C;--tint:#1B2D22;--ink:#EAF2EC;--soft:#A9BDB0;--g:#5BC08C;--on:#0F1A14;--line:#2B4033;--forest:#0A130E;--blue:#6DB2E6;--amber:#E0B04C}}
+:root[data-theme="dark"]{--bg:#0F1A14;--paper:#16241C;--tint:#1B2D22;--ink:#EAF2EC;--soft:#A9BDB0;--g:#5BC08C;--on:#0F1A14;--line:#2B4033;--forest:#0A130E;--blue:#6DB2E6;--amber:#E0B04C}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--b)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:var(--d);line-height:1.12;letter-spacing:-.02em;margin:0}
+h1{font-size:clamp(2.3rem,6vw,4.2rem);font-weight:800}h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800}h3{font-size:1.1rem;font-weight:600}
+p{margin:0 0 1em;max-width:64ch}
+:focus-visible{outline:3px solid var(--g);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:6px;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:50}.skip:focus{left:6px}
+.w{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;justify-content:space-between;align-items:center;min-height:60px;gap:12px;flex-wrap:wrap}
+.brand{font:800 1.05rem var(--d);text-decoration:none;color:inherit}.brand span{color:var(--g)}
+nav{display:flex;gap:2px;flex-wrap:wrap}nav a{min-height:44px;display:inline-flex;align-items:center;padding:0 12px;border-radius:8px;text-decoration:none;color:var(--soft);font-weight:500;font-size:.95rem}nav a:hover{background:var(--tint);color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:12px;font:600 1rem var(--b);text-decoration:none;border:2px solid var(--g);background:none;color:var(--g);cursor:pointer}
+.btn.p{background:var(--g);color:var(--on)}.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.sm{min-height:44px;padding:0 16px}
+section{padding:clamp(52px,8vw,92px) 0}.alt{background:var(--tint)}
+.hero{background:var(--forest);color:#EAF3E6;padding:clamp(52px,8vw,96px) 0 48px}
+.hero p{color:#C7DACD}.hero .btn{border-color:#8FD6AE;color:#8FD6AE}.hero .btn.p{background:#8FD6AE;color:#0F1A14}
+.kick{font-weight:600;color:var(--g);margin-bottom:12px}.hero .kick{color:#8FD6AE}
+.sum{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin:44px 0 0;padding-top:24px;border-top:1px solid #2E5640}
+.sum dt{font-size:.85rem;color:#9FBCA9}.sum dd{margin:2px 0 0;font-weight:600}
+.note{display:inline-block;background:var(--tint);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:.92rem;color:var(--soft)}
+.hero .note{background:#1B4630;border-color:#2E5640;color:#C7DACD}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin-bottom:8px}.card p{margin:0;color:var(--soft)}
+.quote{font:800 clamp(1.5rem,3.4vw,2.5rem)/1.2 var(--d);letter-spacing:-.02em;max-width:22ch;margin:0 0 40px}
+.map{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.map li{display:grid;grid-template-columns:1fr 1.4fr;gap:20px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+.map b{font-family:var(--d)}.map span{color:var(--soft)}
+.jr{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;list-style:none;padding:0;margin:24px 0 0;counter-reset:j}
+.jr li{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px}
+.jr li::before{counter-increment:j;content:counter(j);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--g);color:var(--on);font-weight:600;margin-bottom:10px}
+.jr h3{font-size:1rem;margin-bottom:6px}.jr p{font-size:.92rem;color:var(--soft);margin:0 0 10px}.jr em{font-style:normal;font-weight:600;font-size:.92rem}
+.head{margin-bottom:32px}.head p{color:var(--soft);margin:12px 0 0}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin-bottom:16px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:4px;gap:4px}
+.seg button{min-height:44px;padding:0 16px;border:0;border-radius:9px;background:none;color:var(--soft);font:600 .95rem var(--b);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--g);color:var(--on)}
+.stage{display:flex;justify-content:center;background:var(--tint);border:1px solid var(--line);border-radius:20px;padding:clamp(12px,3vw,32px)}
+.frame{width:100%;max-width:960px;background:var(--bg);border:1px solid var(--line);border-radius:16px;overflow:hidden;container-type:inline-size;transition:max-width .25s}
+.frame.mob{max-width:390px}
+.fb{padding:20px}
+.ft{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 20px;background:var(--paper);border-bottom:1px solid var(--line)}
+.ft strong{font-family:var(--d)}
+.row{display:grid;gap:16px;margin-bottom:16px}.r2{grid-template-columns:1fr 2fr}.r4{grid-template-columns:repeat(4,1fr)}.r5{grid-template-columns:2fr 1fr}
+.pn{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px}
+.pn h4{margin:0 0 6px;font:600 .9rem var(--b);color:var(--soft)}
+.big{font:800 1.9rem/1.1 var(--d)}.sub{font-size:.9rem;color:var(--soft)}
+.ring{display:block;margin:0 auto}.ring text{font:800 34px var(--d);fill:var(--ink)}
+.act{background:var(--forest);color:#EAF3E6;border-color:var(--forest)}.act h4{color:#8FD6AE}.act .sub{color:#C7DACD}.act h3{font-size:1.25rem;margin:4px 0 10px}
+.act .btn{border-color:#8FD6AE;color:#8FD6AE}.act .btn.p{background:#8FD6AE;color:#0F1A14}
+details{margin:10px 0 14px;color:#C7DACD;font-size:.95rem}summary{cursor:pointer;min-height:32px;font-weight:600;color:#8FD6AE}
+.bar2{height:10px;border-radius:6px;background:var(--tint);overflow:hidden;margin:6px 0 12px}.bar2 i{display:block;height:100%;background:var(--g)}
+.lg{display:flex;justify-content:space-between;font-size:.92rem}
+.off{opacity:.6}
+.src{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.src button{min-height:64px;text-align:left;padding:12px 16px;border-radius:12px;border:2px solid var(--line);background:var(--paper);color:var(--ink);font:600 1rem var(--b);cursor:pointer}
+.src button[aria-pressed=true]{border-color:var(--g);background:var(--tint)}.src small{display:block;font-weight:400;color:var(--soft)}
+.priv{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}.priv div{background:var(--tint);border-radius:12px;padding:12px 14px;font-size:.92rem}.priv b{display:block;margin-bottom:2px}
+.dots{display:flex;gap:6px;margin-bottom:14px}.dots i{height:6px;flex:1;border-radius:4px;background:var(--line)}.dots i.on{background:var(--g)}
+.chat{display:grid;gap:10px;margin-bottom:14px;max-height:340px;overflow:auto}
+.m1,.m2{padding:10px 14px;border-radius:14px;max-width:85%}.m1{background:var(--g);color:var(--on);justify-self:end}.m2{background:var(--paper);border:1px solid var(--line)}.m2 small{display:block;color:var(--soft);margin-top:6px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips button{min-height:44px;padding:0 14px;border-radius:999px;border:1px solid var(--g);background:none;color:var(--g);font:500 .92rem var(--b);cursor:pointer}
+@container (max-width:640px){.r2,.r4,.r5,.priv,.src{grid-template-columns:1fr}.r4{grid-template-columns:1fr 1fr}}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--tint);font-family:var(--d)}tr:last-child td{border:0}
+.sw{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px}.sw div{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper);font-size:.85rem}.sw i{display:block;height:56px}.sw span{display:block;padding:8px 10px}
+.scroll{overflow-x:auto}
+ul.l{padding-left:1.2em;margin:0}ul.l li{margin-bottom:.5em}
+footer{padding:28px 0 40px;color:var(--soft);font-size:.92rem;border-top:1px solid var(--line)}
+@media(max-width:860px){.g5{grid-template-columns:1fr 1fr}.g3,.g2,.sw{grid-template-columns:1fr 1fr}.jr{grid-template-columns:1fr 1fr}.sum{grid-template-columns:1fr 1fr}.map li{grid-template-columns:1fr}}
+@media(max-width:560px){.g5,.g3,.g2,.jr{grid-template-columns:1fr}.btn{width:100%}.ctl .seg{width:100%}.ctl .seg button{flex:1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="w bar"><a class="brand" href="#top">EarthPulse <span>AI</span> v2.0</a>
+<nav aria-label="Sections"><a href="#problem">Problem</a><a href="#prototype">Prototype</a><a href="#decisions">Decisions</a><a href="#system">System</a><a href="#next">Next steps</a></nav></div></header>
+<main id="main">
+<section class="hero" id="top"><div class="w">
+<p class="kick">Self-initiated concept · Version 2.0</p>
+<h1>See your footprint.<br>Know your next move.</h1>
+<p style="font-size:1.2rem;margin:22px 0 28px">EarthPulse AI turns environmental data into one Earth score and shows the single action that would improve it most. Version 2.0 redesigns my first concept around that idea.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px"><a class="btn p" href="#prototype">Try the prototype</a><a class="btn" href="#problem">Read the case study</a></div>
+<p class="note">Concept project. All numbers are illustrative sample data, not real user or environmental data.</p>
+<dl class="sum"><div><dt>Project</dt><dd>EarthPulse AI</dd></div><div><dt>Role</dt><dd>UX/UI designer, solo</dd></div><div><dt>Version 1</dt><dd>2 months, Figma</dd></div><div><dt>Version 2</dt><dd>Interactive prototype built with Claude AI</dd></div><div><dt>Platform</dt><dd>Web and mobile</dd></div></dl>
+</div></section>
+
+<section id="problem"><div class="w">
+<p class="kick">Problem</p>
+<p class="quote">Climate anxiety is high. Action is low. The gap isn’t motivation, it’s feedback.</p>
+<div class="g3"><div class="card"><h3>The problem</h3><p>People can’t see how everyday choices add up, so they don’t know what to change.</p></div><div class="card"><h3>The idea</h3><p>Explain environmental data in plain language and turn it into one clear next step.</p></div><div class="card"><h3>The vision</h3><p>One place where anyone can see their impact and know what to do next.</p></div></div>
+<div class="head" style="margin-top:56px"><h2>Problems I set out to solve</h2><p>From my review of existing sustainability tools in version 1, and how version 2 answers each.</p></div>
+<ul class="map">
+<li><b>Data opacity</b><span>Every score has a “Why this?” explanation, and the coach explains how it is calculated.</span></li>
+<li><b>No actionability</b><span>A “Your next best action” card sits next to the score on the dashboard.</span></li>
+<li><b>Fragmented data</b><span>One score and one dashboard across transport, energy, water and waste.</span></li>
+<li><b>Poor mobile UX</b><span>The dashboard has a mobile layout. Use the Mobile toggle in the prototype.</span></li>
+<li><b>No social layer</b><span>Community stays a product area (leaderboard, team challenges). Its screens are not designed yet.</span></li>
+<li><b>Boring interface</b><span>One deep green, clear data colours and plain language instead of dense charts.</span></li></ul>
+</div></section>
+
+<section class="alt" id="users"><div class="w">
+<div class="g2" style="align-items:start"><div class="card"><p class="kick" style="margin:0 0 8px">Concept persona</p><h3 style="font-size:1.5rem;margin-bottom:10px">Maya</h3>
+<p>A concept persona based on my review of existing tools. Not built from interviews and not validated with real users.</p>
+<p style="margin-top:12px"><b>Wants:</b> to know whether her everyday choices matter, and what to do about it.</p><p style="margin:0"><b>Gets frustrated by:</b> data without explanation, and tools that make her do all the work.</p></div>
+<div><h2>Where the product helps Maya</h2><p style="color:var(--soft);margin-top:12px">The riskiest moment is connecting accounts: it asks for the most trust before she has seen any value. Onboarding in the prototype shows what is read, what never is, and gives her a score before asking for more.</p></div></div>
+<ol class="jr"><li><h3>Discovers</h3><p>Hears about it from a colleague.</p><em>Plain-language promise</em></li><li><h3>Visits the site</h3><p>Reads features, watches the demo.</p><em>One idea, no jargon</em></li><li><h3>Connects data</h3><p>Links accounts and sources.</p><em>Say what is read and what isn’t</em></li><li><h3>First dashboard</h3><p>Sees score and a recommendation.</p><em>Score plus one next action</em></li><li><h3>Week three</h3><p>Daily check-ins and goals.</p><em>Goals keep the habit going</em></li></ol>
+</div></section>
+
+<section id="prototype"><div class="w">
+<div class="head"><p class="kick">Prototype</p><h2>Try version 2.0</h2><p>Connect sources, see a score, add the recommended action and watch the score and next action change. The coach uses scripted replies; there is no live AI behind it.</p></div>
+<div class="ctl"><div class="seg" role="group" aria-label="Screen"><button data-s="onboarding" aria-pressed="true">Onboarding</button><button data-s="dashboard" aria-pressed="false">Dashboard</button><button data-s="coach" aria-pressed="false">AI Coach</button></div>
+<div class="seg" role="group" aria-label="Layout"><button data-v="desk" aria-pressed="true">Desktop</button><button data-v="mob" aria-pressed="false">Mobile</button></div></div>
+<div class="stage"><div class="frame" id="frame"><div class="ft"><strong>EarthPulse AI</strong><span class="sub">Sample data</span></div><div class="fb" id="app" aria-live="polite"></div></div></div>
+</div></section>
+
+<section class="alt" id="decisions"><div class="w">
+<div class="head"><h2>Key decisions</h2></div>
+<div class="scroll"><table><thead><tr><th>Decision</th><th>Why</th><th>Trade-off</th></tr></thead><tbody>
+<tr><td>One Earth score (0–100)</td><td>A quick read answers “how am I doing?” before any detail.</td><td>Hides detail, so the breakdown sits one step down.</td></tr>
+<tr><td>Next best action beside the score</td><td>A recommendation is more useful than another chart.</td><td>Needs a visible reason, so every action has a “Why this?”.</td></tr>
+<tr><td>Three-step onboarding</td><td>Short setup lowers the chance people quit before seeing value.</td><td>Needs clear reassurance about data, so the privacy panel comes first.</td></tr>
+<tr><td>Deep green with separate data colours</td><td>Calm, readable, and quick to scan: blue for water, amber for waste.</td><td>Colour is never the only signal, so values and labels always appear.</td></tr></tbody></table></div>
+<div class="head" style="margin-top:56px"><h2>Product structure</h2><p>The same five areas as version 1.</p></div>
+<div class="g5" id="ia"></div>
+</div></section>
+
+<section id="system"><div class="w">
+<div class="head"><h2>Design system</h2><p>Kept small on purpose: one green, neutral text, three data colours, an 8px spacing scale. Primary green on the off-white background is about 6:1 contrast.</p></div>
+<div class="sw"><div><i style="background:#166A43"></i><span>Green #166A43</span></div><div><i style="background:#12301F"></i><span>Forest #12301F</span></div><div><i style="background:#EAF3E6"></i><span>Tint #EAF3E6</span></div><div><i style="background:#2B7BB9"></i><span>Water #2B7BB9</span></div><div><i style="background:#B9800F"></i><span>Waste #B9800F</span></div><div><i style="background:#14231B"></i><span>Text #14231B</span></div></div>
+<div class="g2"><div class="card"><h3 style="font-size:2rem;font-weight:800">Plus Jakarta Sans</h3><p>Headings and key numbers. Body and UI text in Inter, 16px minimum.</p></div>
+<div class="card"><div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px"><button class="btn p sm">Primary</button><button class="btn sm">Secondary</button></div><div class="bar2"><i style="width:62%"></i></div><p>Components use 16px radius, 24px padding and 44px minimum tap targets.</p></div></div>
+</div></section>
+
+<section class="alt" id="next"><div class="w g2" style="align-items:start">
+<div><h2>What changed from version 1</h2><ul class="l" style="margin-top:20px"><li>Removed the invented stats, testimonials and unproven research claims.</li><li>Added a next best action, onboarding with a privacy panel, an AI Coach and a mobile dashboard.</li><li>Fixed contradictory dashboard data, added units and consistent labels.</li><li>Cut the repeated hero and dashboard, and the stock photos.</li></ul></div>
+<div><h2>What I would test next</h2><ul class="l" style="margin-top:20px"><li>Can a new user connect a source and see a score quickly?</li><li>Do users understand what the Earth score means?</li><li>Which suggested action do people choose first?</li><li>Honest limits: not yet tested with users. Community and goals screens, the landing page and the score logic are not part of this version.</li></ul></div>
+</div></section>
+</main>
+<footer><div class="w">EarthPulse AI v2.0 · Concept project by Punam Sarkar · Illustrative data only</div></footer>
+
+<script>
+const $=s=>document.querySelector(s),app=$('#app');
+const SRC=[['Transport','Trips and fuel'],['Home energy','Electricity use'],['Water','Water use'],['Waste','Recycling and waste']];
+const ACT=[
+{t:'Swap two car trips a week for bus or metro',why:'Transport is the largest category in this sample, so small changes there move the score most.',pts:4,kg:'about 18 kg CO₂e a month'},
+{t:'Switch laundry to cold washes',why:'Heating water is a steady source of home energy use, and this change needs no daily effort.',pts:2,kg:'about 6 kg CO₂e a month'},
+{t:'Start separating food waste',why:'Waste is the smallest category here, but it is a quick habit to build.',pts:2,kg:'about 4 kg CO₂e a month'}];
+const S={screen:'onboarding',step:1,src:new Set([0,1]),done:[],chat:[{r:'m2',t:'Hi Maya. Ask me about your score or your next step.'}]};
+const score=()=>Math.min(95,40+S.src.size*5+S.done.reduce((a,i)=>a+ACT[i].pts,0));
+const next=()=>ACT.findIndex((a,i)=>!S.done.includes(i));
+const ring=v=>`<svg class="ring" width="150" height="150" viewBox="0 0 150 150" role="img" aria-label="Earth score ${v} out of 100"><circle cx="75" cy="75" r="62" fill="none" stroke="var(--tint)" stroke-width="14"/><circle cx="75" cy="75" r="62" fill="none" stroke="var(--g)" stroke-width="14" stroke-linecap="round" stroke-dasharray="${3.896*v} 400" transform="rotate(-90 75 75)"/><text x="75" y="84" text-anchor="middle">${v}</text></svg>`;
+function actCard(){const i=next();if(i<0)return`<div class="pn act"><h4>Your next best action</h4><h3>All three suggestions added</h3><p class="sub">New suggestions would appear here as your data changes.</p></div>`;const a=ACT[i];
+return`<div class="pn act"><h4>Your next best action</h4><h3>${a.t}</h3><p class="sub">Estimated saving: ${a.kg} (sample estimate). Score +${a.pts}.</p><details><summary>Why this?</summary><p style="margin:8px 0 0">${a.why}</p></details><button class="btn p sm" data-add="${i}">Add to my goals</button></div>`}
+function kpi(n,v,u,d,i){const on=S.src.has(i);return`<div class="pn${on?'':' off'}"><h4>${n}</h4>${on?`<div class="big">${v}<span class="sub"> ${u}</span></div><div class="sub">${d}</div>`:`<div class="sub">Not connected. Connect it in onboarding.</div>`}</div>`}
+function onb(){const dots=`<div class="dots" aria-hidden="true">${[1,2,3].map(n=>`<i class="${n<=S.step?'on':''}"></i>`).join('')}</div><p class="sub">Step ${S.step} of 3</p>`;
+if(S.step==1)return dots+`<h3 style="font-size:1.4rem">Connect your data</h3><p class="sub">Choose what to include. You can skip any source and enter numbers by hand.</p><div class="src">${SRC.map((s,i)=>`<button data-src="${i}" aria-pressed="${S.src.has(i)}">${s[0]}<small>${s[1]}</small></button>`).join('')}</div><div class="priv"><div><b>We read</b>Totals such as distance, energy, water and waste categories.</div><div><b>We never read</b>Message content or anything you don’t select.</div><div><b>Your choice</b>Skip a source or enter numbers manually.</div></div><button class="btn p" data-go="2" ${S.src.size?'':'disabled'}>See my impact</button>`;
+if(S.step==2)return dots+`<h3 style="font-size:1.4rem">Your first Earth score</h3><div class="pn" style="text-align:center;margin:14px 0">${ring(score())}<p class="sub" style="margin:8px auto 0">Based on ${S.src.size} of 4 areas. Illustrative score for this concept.</p></div><button class="btn p" data-go="3">Continue</button>`;
+return dots+`<h3 style="font-size:1.4rem">Act on your first insight</h3><p class="sub">Pick up the recommended action now, or go straight to your dashboard.</p><div style="margin:14px 0">${actCard()}</div><button class="btn" data-screen="dashboard">Go to dashboard</button>`}
+function dash(){const v=score(),cats=[['Transport',42,'var(--g)'],['Home energy',31,'var(--blue)'],['Waste',15,'var(--amber)'],['Water',12,'var(--blue)']],pts=[62,60,63,58,57,55,56,52,50,49,47,45].map((y,i)=>`${i*27},${y}`).join(' ');
+const goals=[['Cut transport emissions by 20%','by Dec 2026',62],['Recycle more at home','by Mar 2027',40]].concat(S.done.map(i=>[ACT[i].t,'new goal',10]));
+return`<h3 style="font-size:1.3rem;margin-bottom:14px">Good morning, Maya</h3>
+<div class="row r2"><div class="pn" style="text-align:center"><h4>Earth score</h4>${ring(v)}<div class="sub">Out of 100, sample</div></div>${actCard()}</div>
+<div class="row r4">${kpi('Carbon','312','kg CO₂e','8% lower than last month',0)}${kpi('Home energy','186','kWh','3% lower than last month',1)}${kpi('Water','3,850','litres','5% lower than last month',2)}${kpi('Waste','41','kg','12% lower than last month',3)}</div>
+<div class="row r5"><div class="pn"><h4>Carbon over 12 months (sample)</h4><svg viewBox="0 0 300 70" width="100%" role="img" aria-label="Line chart: monthly carbon falling from high to low over 12 months"><polyline points="${pts}" fill="none" stroke="var(--g)" stroke-width="3" stroke-linejoin="round" transform="translate(0,4)"/></svg></div>
+<div class="pn"><h4>By category</h4>${cats.map(c=>`<div class="lg"><span>${c[0]}</span><b>${c[1]}%</b></div><div class="bar2"><i style="width:${c[1]}%;background:${c[2]}"></i></div>`).join('')}</div></div>
+<div class="pn"><h4>Goals</h4>${goals.map(g=>`<div class="lg"><span>${g[0]}</span><span class="sub">${g[1]} · ${g[2]}%</span></div><div class="bar2"><i style="width:${g[2]}%"></i></div>`).join('')}</div>`}
+function reply(k){const v=score(),n=next();return k==0?[`Your score is ${v}. In this concept it reflects how many areas you track and the actions you have added.`,'Why: it is an illustrative score, not a measured one.']:k==1?[n<0?'You have added every suggestion. New ones would appear as your data changes.':`Start with: ${ACT[n].t}.`,n<0?'Why: nothing is left to suggest in this sample.':`Why: ${ACT[n].why}`]:['In this concept the score is a simple illustration. A real version would use published emission factors, which I have not built.','Why I say so: I would rather show the gap than imply accuracy.']}
+function coach(){return`<h3 style="font-size:1.3rem;margin-bottom:6px">AI Coach</h3><p class="sub">Scripted replies for this concept. Each answer says why.</p><div class="chat" role="log">${S.chat.map(m=>`<div class="${m.r}">${m.t}${m.w?`<small>${m.w}</small>`:''}</div>`).join('')}</div><div class="chips">${['Why is my score '+score()+'?','What should I do first?','How is the score calculated?'].map((q,i)=>`<button data-q="${i}">${q}</button>`).join('')}</div>`}
+function draw(){app.innerHTML=S.screen=='onboarding'?onb():S.screen=='dashboard'?dash():coach();
+document.querySelectorAll('[data-s]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.s==S.screen))}
+document.addEventListener('click',e=>{const t=e.target.closest('button');if(!t)return;const d=t.dataset;
+if(d.s||d.screen){S.screen=d.s||d.screen;draw();return}
+if(d.v){$('#frame').classList.toggle('mob',d.v=='mob');document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b==t));return}
+if(d.src!==undefined){const i=+d.src;S.src.has(i)?S.src.delete(i):S.src.add(i);draw();return}
+if(d.go){S.step=+d.go;draw();return}
+if(d.add!==undefined){S.done.push(+d.add);S.screen='dashboard';draw();return}
+if(d.q!==undefined){const r=reply(+d.q);S.chat.push({r:'m1',t:t.textContent},{r:'m2',t:r[0],w:r[1]});draw()}});
+$('#ia').innerHTML=[['Dashboard','Overview, carbon, water, waste, score'],['My goals','Goals, achievements, milestones'],['Chat assistant','AI coach, action plans, insights'],['Community','Leaderboard, team challenges'],['Account','Reports, integrations, settings']].map(a=>`<div class="card"><h3>${a[0]}</h3><p style="font-size:.92rem">${a[1]}</p></div>`).join('');
+draw();
+</script></body></html>
+
+node_modules
+.next
+.vercel
+.env*.local
+
+{"name":"punam-sarkar-portfolio","version":"1.0.0","private":true,
+"scripts":{"dev":"next dev","build":"next build","start":"next start"},
+"dependencies":{"next":"^14.2.25","react":"^18.3.1","react-dom":"^18.3.1"}}
+
+{
+  "name": "punam-sarkar-portfolio",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "punam-sarkar-portfolio",
+      "version": "1.0.0",
+      "dependencies": {
+        "next": "^14.2.25",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+      }
+    },
+    "node_modules/@next/env": {
+      "version": "14.2.35",
+      "resolved": "https://registry.npmjs.org/@next/env/-/env-14.2.35.tgz",
+      "integrity": "sha512-DuhvCtj4t9Gwrx80dmz2F4t/zKQ4ktN8WrMwOuVzkJfBilwAwGr6v16M5eI8yCuZ63H9TTuEU09Iu2HqkzFPVQ==",
+      "license": "MIT"
+    },
+    "node_modules/@next/swc-darwin-arm64": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.2.33.tgz",
+      "integrity": "sha512-HqYnb6pxlsshoSTubdXKu15g3iivcbsMXg4bYpjL2iS/V6aQot+iyF4BUc2qA/J/n55YtvE4PHMKWBKGCF/+wA==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-darwin-x64": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-14.2.33.tgz",
+      "integrity": "sha512-8HGBeAE5rX3jzKvF593XTTFg3gxeU4f+UWnswa6JPhzaR6+zblO5+fjltJWIZc4aUalqTclvN2QtTC37LxvZAA==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-linux-arm64-gnu": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-14.2.33.tgz",
+      "integrity": "sha512-JXMBka6lNNmqbkvcTtaX8Gu5by9547bukHQvPoLe9VRBx1gHwzf5tdt4AaezW85HAB3pikcvyqBToRTDA4DeLw==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-linux-arm64-musl": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-14.2.33.tgz",
+      "integrity": "sha512-Bm+QulsAItD/x6Ih8wGIMfRJy4G73tu1HJsrccPW6AfqdZd0Sfm5Imhgkgq2+kly065rYMnCOxTBvmvFY1BKfg==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-linux-x64-gnu": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-14.2.33.tgz",
+      "integrity": "sha512-FnFn+ZBgsVMbGDsTqo8zsnRzydvsGV8vfiWwUo1LD8FTmPTdV+otGSWKc4LJec0oSexFnCYVO4hX8P8qQKaSlg==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-linux-x64-musl": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-14.2.33.tgz",
+      "integrity": "sha512-345tsIWMzoXaQndUTDv1qypDRiebFxGYx9pYkhwY4hBRaOLt8UGfiWKr9FSSHs25dFIf8ZqIFaPdy5MljdoawA==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-win32-arm64-msvc": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-14.2.33.tgz",
+      "integrity": "sha512-nscpt0G6UCTkrT2ppnJnFsYbPDQwmum4GNXYTeoTIdsmMydSKFz9Iny2jpaRupTb+Wl298+Rh82WKzt9LCcqSQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-win32-ia32-msvc": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-14.2.33.tgz",
+      "integrity": "sha512-pc9LpGNKhJ0dXQhZ5QMmYxtARwwmWLpeocFmVG5Z0DzWq5Uf0izcI8tLc+qOpqxO1PWqZ5A7J1blrUIKrIFc7Q==",
+      "cpu": [
+        "ia32"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@next/swc-win32-x64-msvc": {
+      "version": "14.2.33",
+      "resolved": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.2.33.tgz",
+      "integrity": "sha512-nOjfZMy8B94MdisuzZo9/57xuFVLHJaDj5e/xrduJp9CV2/HrfxTRH2fbyLe+K9QT41WBLUd4iXX3R7jBp0EUg==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/@swc/counter": {
+      "version": "0.1.3",
+      "resolved": "https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz",
+      "integrity": "sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==",
+      "license": "Apache-2.0"
+    },
+    "node_modules/@swc/helpers": {
+      "version": "0.5.5",
+      "resolved": "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.5.tgz",
+      "integrity": "sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@swc/counter": "^0.1.3",
+        "tslib": "^2.4.0"
+      }
+    },
+    "node_modules/busboy": {
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz",
+      "integrity": "sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==",
+      "dependencies": {
+        "streamsearch": "^1.1.0"
+      },
+      "engines": {
+        "node": ">=10.16.0"
+      }
+    },
+    "node_modules/caniuse-lite": {
+      "version": "1.0.30001822",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001822.tgz",
+      "integrity": "sha512-Y3fvWQWzc69dlCyr07tuNrEhotv+db5FpMSPD3slZnkPKwRNOKwFBz2dP966XUmWMXLTOt+YShkFoQoom3U7hg==",
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/caniuse-lite"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    "node_modules/client-only": {
+      "version": "0.0.1",
+      "resolved": "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz",
+      "integrity": "sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==",
+      "license": "MIT"
+    },
+    "node_modules/graceful-fs": {
+      "version": "4.2.11",
+      "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz",
+      "integrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==",
+      "license": "ISC"
+    },
+    "node_modules/js-tokens": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
+      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
+      "license": "MIT"
+    },
+    "node_modules/loose-envify": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
+      "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
+      "license": "MIT",
+      "dependencies": {
+        "js-tokens": "^3.0.0 || ^4.0.0"
+      },
+      "bin": {
+        "loose-envify": "cli.js"
+      }
+    },
+    "node_modules/nanoid": {
+      "version": "3.3.20",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.20.tgz",
+      "integrity": "sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==",
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "bin": {
+        "nanoid": "bin/nanoid.cjs"
+      },
+      "engines": {
+        "node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
+      }
+    },
+    "node_modules/next": {
+      "version": "14.2.35",
+      "resolved": "https://registry.npmjs.org/next/-/next-14.2.35.tgz",
+      "integrity": "sha512-KhYd2Hjt/O1/1aZVX3dCwGXM1QmOV4eNM2UTacK5gipDdPN/oHHK/4oVGy7X8GMfPMsUTUEmGlsy0EY1YGAkig==",
+      "license": "MIT",
+      "dependencies": {
+        "@next/env": "14.2.35",
+        "@swc/helpers": "0.5.5",
+        "busboy": "1.6.0",
+        "caniuse-lite": "^1.0.30001579",
+        "graceful-fs": "^4.2.11",
+        "postcss": "8.4.31",
+        "styled-jsx": "5.1.1"
+      },
+      "bin": {
+        "next": "dist/bin/next"
+      },
+      "engines": {
+        "node": ">=18.17.0"
+      },
+      "optionalDependencies": {
+        "@next/swc-darwin-arm64": "14.2.33",
+        "@next/swc-darwin-x64": "14.2.33",
+        "@next/swc-linux-arm64-gnu": "14.2.33",
+        "@next/swc-linux-arm64-musl": "14.2.33",
+        "@next/swc-linux-x64-gnu": "14.2.33",
+        "@next/swc-linux-x64-musl": "14.2.33",
+        "@next/swc-win32-arm64-msvc": "14.2.33",
+        "@next/swc-win32-ia32-msvc": "14.2.33",
+        "@next/swc-win32-x64-msvc": "14.2.33"
+      },
+      "peerDependencies": {
+        "@opentelemetry/api": "^1.1.0",
+        "@playwright/test": "^1.41.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sass": "^1.3.0"
+      },
+      "peerDependenciesMeta": {
+        "@opentelemetry/api": {
+          "optional": true
+        },
+        "@playwright/test": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/picocolors": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "license": "ISC"
+    },
+    "node_modules/postcss": {
+      "version": "8.4.31",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz",
+      "integrity": "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==",
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/postcss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "nanoid": "^3.3.6",
+        "picocolors": "^1.0.0",
+        "source-map-js": "^1.0.2"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    "node_modules/react": {
+      "version": "18.3.1",
+      "resolved": "https://registry.npmjs.org/react/-/react-18.3.1.tgz",
+      "integrity": "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.1.0"
+      },
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/react-dom": {
+      "version": "18.3.1",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz",
+      "integrity": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.1.0",
+        "scheduler": "^0.23.2"
+      },
+      "peerDependencies": {
+        "react": "^18.3.1"
+      }
+    },
+    "node_modules/scheduler": {
+      "version": "0.23.2",
+      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz",
+      "integrity": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.1.0"
+      }
+    },
+    "node_modules/source-map-js": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+      "integrity": "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==",
+      "license": "BSD-3-Clause",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/streamsearch": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz",
+      "integrity": "sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==",
+      "engines": {
+        "node": ">=10.0.0"
+      }
+    },
+    "node_modules/styled-jsx": {
+      "version": "5.1.1",
+      "resolved": "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.1.tgz",
+      "integrity": "sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==",
+      "license": "MIT",
+      "dependencies": {
+        "client-only": "0.0.1"
+      },
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "peerDependencies": {
+        "react": ">= 16.8.0 || 17.x.x || ^18.0.0-0"
+      },
+      "peerDependenciesMeta": {
+        "@babel/core": {
+          "optional": true
+        },
+        "babel-plugin-macros": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/tslib": {
+      "version": "2.9.1",
+      "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.9.1.tgz",
+      "integrity": "sha512-a4Ux9VKuIMHsOS7ENbEq6hK2ZGYIT27Rtl0E4eD9KqwxhKiQeMZE/9xb3IdYwWaSOyIBQLExhQgXDTYoiCxnWA==",
+      "license": "0BSD"
+    }
+  }
+}
+
+# Punam Sarkar portfolio (Next.js)
+
+## Run locally
+    npm install
+    npm run dev        # http://localhost:3000
+
+## Replace the resume (no code change)
+Replace `public/resume.pdf` with your new PDF and keep the same filename.
+The View button, Download button and the preview all read that one file.
+On GitHub: open `public/`, click Add file > Upload files, drop the new `resume.pdf`, commit. Vercel redeploys automatically.
+
+## Edit text
+All text is in `content/site.js`: hero, about, experience, skills, education, certificates, contact links and every project.
+To add screenshots to a project, put images in `public/images/` and add them to that project's `images` list.
+
+## Deploy
+Push to GitHub, import the repo in Vercel (Framework: Next.js, defaults), click Deploy. No environment variables are needed.
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { site } from '../../../content/site';
+
+export function generateStaticParams() {
+  return site.projects.map((p) => ({ slug: p.slug }));
+}
+export function generateMetadata({ params }) {
+  const p = site.projects.find((x) => x.slug === params.slug);
+  return p ? { title: `${p.title} — ${site.name}`, description: p.card } : {};
+}
+
+export default function ProjectPage({ params }) {
+  const list = site.projects;
+  const k = list.findIndex((x) => x.slug === params.slug);
+  if (k < 0) notFound();
+  const p = list[k], prev = list[k - 1], next = list[k + 1];
+  return (
+    <article className="study"><div className="wrap">
+      <Link className="crumb" href="/#work">← All work</Link>
+      <span className="tag" style={{ display: 'block', marginBottom: 12 }}>{p.tag}</span>
+      <h1>{p.title}</h1>
+      <p className="lead">{p.intro}</p>
+      <dl className="meta">{p.meta.map(([a, b]) => <div key={a}><dt>{a}</dt><dd>{b}</dd></div>)}</dl>
+      {p.chips && <><h2 className="mini">What I worked on</h2><ul className="chips">{p.chips.map((c) => <li key={c}>{c}</li>)}</ul></>}
+      {p.embed && (
+        <div className="embed">
+          <h2 className="mini">{p.embed.heading}</h2>
+          <p>{p.embed.text}</p>
+          <a className="btn p" href={p.embed.src} target="_blank" rel="noopener">Open full screen</a>
+          <iframe src={p.embed.src} title={p.embed.title} loading="lazy" />
+        </div>
+      )}
+      {p.images.length > 0 && (
+        <div className="shots">{p.images.map((im) => (
+          <figure key={im.src}><Image src={im.src} alt={im.alt} width={im.w} height={im.h} sizes="(max-width:1120px) 100vw, 1040px" /><figcaption>{im.caption}</figcaption></figure>))}
+        </div>
+      )}
+      <div className="body">{p.sections.map(([h, b]) => (
+        <section key={h} className="row"><h2>{h}</h2>
+          <div>{Array.isArray(b) ? <ul>{b.map((x) => <li key={x}>{x}</li>)}</ul> : <p>{b}</p>}</div></section>))}
+      </div>
+      <div className="pn">
+        {prev ? <Link className="btn s" href={`/projects/${prev.slug}`}>← {prev.title}</Link> : <span />}
+        {next ? <Link className="btn s" href={`/projects/${next.slug}`}>{next.title} →</Link> : <Link className="btn p" href="/#contact">Get in touch</Link>}
+      </div>
+    </div></article>
+  );
+}
+
+import ProjectCard from '../components/ProjectCard';
+import ResumeSection from '../components/ResumeSection';
+import { site } from '../content/site';
+
+export default function Home() {
+  const { hero, about } = site;
+  return (
+    <>
+      <section className="hero"><div className="wrap hgrid">
+        <div>
+          <p className="avail">{hero.badge}</p>
+          <h1>{hero.title}</h1>
+          <p className="lead">{hero.text}</p>
+          <div className="cta">
+            <a className="btn p" href="/projects/scratchly-crm-dashboard">View Scratchly case study</a>
+            <a className="btn s" href={site.resume.file} download={site.resume.downloadName}>Download resume</a>
+          </div>
+        </div>
+        <aside className="ledger" aria-label="Internship summary">
+          <h2>{hero.ledgerTitle}</h2><p>{hero.ledgerText}</p>
+          <ul className="chips">{hero.ledger.map((c) => <li key={c}>{c}</li>)}</ul>
+        </aside>
+      </div></section>
+
+      <section className="sec" id="work"><div className="wrap">
+        <div className="head"><h2>Selected work</h2><p>One internship project and two self-initiated concepts.</p></div>
+        <div className="grid">{site.projects.map((p, i) => <ProjectCard key={p.slug} p={p} featured={i === 0} />)}</div>
+      </div></section>
+
+      <section className="sec" id="experience"><div className="wrap exp">
+        <h2>Experience</h2>
+        <div>{site.experience.map((e) => (
+          <article className="job" key={e.role}>
+            <h3>{e.role}, {e.company}</h3><small>{e.dates}</small>
+            <ul>{e.bullets.map((b) => <li key={b}>{b}</li>)}</ul>
+            <a className="btn s" href={e.link.href}>{e.link.label}</a>
+          </article>))}
+        </div>
+      </div></section>
+
+      <section className="sec" id="skills"><div className="wrap">
+        <div className="head"><h2>Skills and tools</h2></div>
+        <div className="skills">{site.skills.map((s) => (
+          <div key={s.group}><h3>{s.group}</h3><ul>{s.items.map((i) => <li key={i}>{i}</li>)}</ul></div>))}
+        </div>
+      </div></section>
+
+      <section className="sec" id="about"><div className="wrap about">
+        <h2>{about.title}</h2>
+        <div>{about.paragraphs.map((p) => <p key={p}>{p}</p>)}</div>
+      </div></section>
+
+      <section className="sec" id="education"><div className="wrap">
+        <div className="head"><h2>Education and certificates</h2></div>
+        <div className="certs">
+          {site.education.map((e) => <div key={e.name}><h3>{e.name}</h3><p>{e.by} · {e.when}</p></div>)}
+          {site.certificates.map((c) => <div key={c.name}><h3>{c.name}</h3><p>{c.by} · {c.when}</p></div>)}
+        </div>
+      </div></section>
+
+      <ResumeSection resume={site.resume} />
+
+      <section className="sec contact" id="contact"><div className="wrap">
+        <h2>{site.contact.title}</h2>
+        <p style={{ marginTop: 18 }}>{site.contact.text}</p>
+        <p className="loc">{site.location}</p>
+        <div className="links">
+          <a className="btn p" href={`mailto:${site.email}`}>{site.email}</a>
+          <a className="btn s" href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+          <a className="btn s" href={site.behance} target="_blank" rel="noopener">Behance</a>
+        </div>
+      </div></section>
+    </>
+  );
+}
+
+:root{--bg:#F3EBDD;--paper:#FBF7EF;--oat:#E7DAC4;--ink:#2A1D15;--soft:#5E4A3C;--walnut:#5B4030;--accent:#35575A;--line:#D8C9AF;--on:#FBF7EF;
+--d:'Bricolage Grotesque','Trebuchet MS',sans-serif;--b:'Hanken Grotesk','Segoe UI',system-ui,sans-serif}
+@media(prefers-color-scheme:dark){:root{--bg:#1F1611;--paper:#2A1F18;--oat:#3A2C22;--ink:#F1E7D6;--soft:#C9B8A2;--walnut:#D9B99B;--accent:#9DC0BB;--line:#473829;--on:#1F1611}}
+html{scroll-padding-top:76px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--b);-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3{font-family:var(--d);line-height:1.1;letter-spacing:-.02em;margin:0;font-weight:700}
+h1{font-size:clamp(2.4rem,6.4vw,4.9rem)}h2{font-size:clamp(1.8rem,3.6vw,2.7rem)}h3{font-size:1.25rem;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:66ch}a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:50}.skip:focus{left:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+header{position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:16px}
+.brand{font:700 1.15rem var(--d);text-decoration:none}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;align-items:center}
+nav a:not(.btn){display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:500;border-radius:8px}
+nav a:not(.btn):hover{background:var(--oat)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--walnut);transition:background .15s,color .15s}
+.btn.p{background:var(--walnut);color:var(--on)}.btn.p:hover{background:var(--ink);border-color:var(--ink)}.btn.s:hover{background:var(--oat)}
+nav .btn{min-height:44px;padding:0 16px;margin-left:6px}
+.menu{display:none;min-height:44px;min-width:44px;background:none;border:2px solid var(--line);border-radius:10px;color:inherit;font:700 .95rem var(--b);cursor:pointer;padding:0 14px}
+.sec{padding:clamp(56px,9vw,104px) 0;border-top:1px solid var(--line)}
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(48px,7vw,80px)}
+.hgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(32px,5vw,64px);align-items:end}
+.avail{display:inline-flex;gap:10px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 16px 6px 12px;font-weight:500;font-size:.95rem;margin-bottom:28px}
+.avail::before{content:"";width:10px;height:10px;border-radius:50%;background:#5E8C61}
+.lead{font-size:1.2rem;color:var(--soft);margin:28px 0 32px}
+.cta,.links{display:flex;flex-wrap:wrap;gap:12px}.links{margin-top:28px}
+.ledger{background:var(--walnut);color:var(--on);border-radius:18px;padding:28px}
+.ledger h2{font-size:1.5rem;margin-bottom:6px}.ledger p{color:inherit;opacity:.88;margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.chips li{border:1px solid currentColor;border-radius:999px;padding:3px 13px;font-size:.92rem}
+.ledger .chips li{border-color:rgba(251,247,239,.45)}
+.head{margin-bottom:40px}.head p{color:var(--soft);margin:12px 0 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--walnut);transform:translateY(-2px)}
+.card.big{grid-column:1/-1;flex-direction:row}
+.cover{background:var(--oat);aspect-ratio:16/10;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;overflow:hidden}
+.card.big .cover{flex:1.1;aspect-ratio:auto;min-height:280px;background:var(--walnut);color:var(--on)}
+.cover b{font:700 clamp(1.7rem,3vw,2.4rem)/1.05 var(--d);letter-spacing:-.02em;margin-bottom:14px}
+.cover.img{padding:0;background:#cfe6c8}.cover.img img{width:100%;height:100%;object-fit:cover;object-position:top}
+.cbody{padding:26px 28px 30px;flex:1;display:flex;flex-direction:column;gap:10px}
+.card.big .cbody{justify-content:center}
+.tag{color:var(--accent);font-weight:700;font-size:.95rem}
+.cbody p{margin:0;color:var(--soft)}
+.more{margin-top:auto;padding-top:10px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.exp,.about{display:grid;grid-template-columns:1fr 2fr;gap:clamp(24px,5vw,64px)}
+.job{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(24px,4vw,40px)}
+.job small,.meta dt{color:var(--soft);font-size:.95rem}
+.job ul,.body ul{padding-left:1.2em;margin:14px 0 1em}.job li,.body li{margin-bottom:.4em}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.skills>div{border-top:3px solid var(--walnut);padding-top:16px}.skills h3{margin-bottom:10px}
+.skills ul{list-style:none;padding:0;margin:0;color:var(--soft)}.skills li{padding:3px 0}
+.certs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.certs>div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.certs p{color:var(--soft);margin:4px 0 0}
+.pdf{display:block;width:100%;height:min(80vh,900px);margin-top:28px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.pdfnote{display:none;margin-top:20px;color:var(--soft)}
+.contact{background:var(--oat)}.loc{margin:18px 0 0;color:var(--soft)}
+footer{padding:28px 0 40px;color:var(--soft);font-size:.95rem;border-top:1px solid var(--line)}
+.study{padding:clamp(40px,6vw,72px) 0}
+.crumb{display:inline-flex;min-height:44px;align-items:center;font-weight:700;margin-bottom:24px}
+.study h1{font-size:clamp(2.2rem,5.4vw,4rem);margin-bottom:20px}.study .lead{margin:0}
+.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:40px 0;padding:24px 0;border-block:1px solid var(--line)}
+.meta dd{margin:2px 0 0;font-weight:700}.meta div{min-width:0}
+.mini{font-size:1.4rem;margin:36px 0 14px}
+.embed{margin:40px 0}.embed p{color:var(--soft)}
+.embed iframe{display:block;width:100%;height:min(82vh,820px);margin-top:20px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.shots{display:grid;gap:32px;margin:40px 0}.shots figure{margin:0}.shots img{border:1px solid var(--line);border-radius:14px;width:100%}
+.shots figcaption{color:var(--soft);font-size:.95rem;margin-top:10px}
+.body{display:grid;gap:0;margin-top:40px}
+.body .row{display:grid;grid-template-columns:1fr 2fr;gap:12px clamp(24px,5vw,64px);padding:28px 0;border-top:1px solid var(--line)}
+.body h2{font-size:1.4rem}
+.pn{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:56px}
+@media(max-width:900px){.hgrid,.exp,.about,.body .row{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.meta{grid-template-columns:1fr 1fr}.card.big{flex-direction:column}.card.big .cover{min-height:220px}}
+@media(max-width:720px){.menu{display:inline-flex;align-items:center;justify-content:center}
+nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:8px 20px 16px;gap:0}
+nav ul.open{display:flex}nav .btn{margin:8px 0 0}
+.grid,.certs,.skills{grid-template-columns:1fr}.cta .btn{flex:1 1 100%}}
+@media(max-width:640px){.pdf{display:none}.pdfnote{display:block}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+import './globals.css';
+import Header from '../components/Header';
+import { site } from '../content/site';
+
+export const metadata = {
+  title: site.title,
+  description: site.description,
+  openGraph: { title: site.title, description: site.description, type: 'website' },
+};
+export const viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover' };
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Hanken+Grotesk:wght@400;500;700&display=swap" />
+      </head>
+      <body>
+        <a className="skip" href="#main">Skip to content</a>
+        <Header name={site.name} resume={site.resume.file} />
+        <main id="main" tabIndex={-1}>{children}</main>
+        <footer><div className="wrap">© {new Date().getFullYear()} {site.name}. UI/UX designer.</div></footer>
+      </body>
+    </html>
+  );
+}
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="#5B4030"/></svg>
+
+'use client';
+import Link from 'next/link';
+import { useState } from 'react';
+
+const LINKS = [['Work', '/#work'], ['Experience', '/#experience'], ['About', '/#about'], ['Resume', '/#resume'], ['Contact', '/#contact']];
+
+export default function Header({ name, resume }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <header>
+      <div className="wrap bar">
+        <Link className="brand" href="/">{name}</Link>
+        <nav aria-label="Main">
+          <button className="menu" aria-expanded={open} aria-controls="nav-list" onClick={() => setOpen(!open)}>Menu</button>
+          <ul id="nav-list" className={open ? 'open' : ''}>
+            {LINKS.map(([t, h]) => <li key={h}><Link href={h} onClick={() => setOpen(false)}>{t}</Link></li>)}
+            <li><a className="btn p" href={resume} target="_blank" rel="noopener">View resume</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+// Both buttons and the preview read the SAME file: public/resume.pdf
+export default function ResumeSection({ resume }) {
+  return (
+    <section className="sec" id="resume">
+      <div className="wrap">
+        <div className="head"><h2>Resume</h2><p>One page. View it here, open it in a new tab, or download it.</p></div>
+        <div className="cta">
+          <a className="btn p" href={resume.file} target="_blank" rel="noopener">View resume</a>
+          <a className="btn s" href={resume.file} download={resume.downloadName}>Download resume</a>
+        </div>
+        <object className="pdf" data={`${resume.file}#view=FitH`} type="application/pdf" aria-label="Resume preview">
+          <p>Your browser can’t show the preview. Use the buttons above.</p>
+        </object>
+        <p className="pdfnote">The inline preview is hidden on small screens. Use the buttons above.</p>
+      </div>
+    </section>
+  );
+}
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function ProjectCard({ p, featured }) {
+  return (
+    <Link className={'card' + (featured ? ' big' : '')} href={`/projects/${p.slug}`}>
+      {p.cover ? (
+        <div className="cover img"><Image src={p.cover.src} alt="" width={p.cover.w} height={p.cover.h} sizes="(max-width:720px) 100vw, 560px" /></div>
+      ) : (
+        <div className="cover"><b>{p.title}</b>{p.chips && <ul className="chips">{p.chips.slice(0, 6).map((c) => <li key={c}>{c}</li>)}</ul>}</div>
+      )}
+      <div className="cbody">
+        <span className="tag">{p.tag}</span>
+        <h3>{p.title}</h3>
+        <p>{p.card}</p>
+        <span className="more">Read case study</span>
+      </div>
+    </Link>
+  );
+}
