@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <a className="skip" href="#main">Skip to content</a>
         <Header name={site.name} resume={site.resume.file} />
         <main id="main" tabIndex={-1}>{children}</main>
-        <footer><div className="wrap">© {new Date().getFullYear()} {site.name}. UI/UX designer.</div></footer>
+        <footer><div className="wrap">© {new Date().getFullYear()} {site.name}. UI/UX Designer | Product Designer.</div></footer>
       </body>
     </html>
   );

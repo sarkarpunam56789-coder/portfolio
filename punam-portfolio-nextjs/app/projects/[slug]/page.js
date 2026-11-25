@@ -4,17 +4,24 @@ import { notFound } from 'next/navigation';
 import { site } from '../../../content/site';
 
 export function generateStaticParams() {
-  return site.projects.map((p) => ({ slug: p.slug }));
+  return site.projects.filter((p) => !p.external).map((p) => ({ slug: p.slug }));
 }
 export function generateMetadata({ params }) {
   const p = site.projects.find((x) => x.slug === params.slug);
   return p ? { title: `${p.title} — ${site.name}`, description: p.card } : {};
 }
 
+function PN({ p, dir }) {
+  const label = dir === 'prev' ? `← ${p.title}` : `${p.title} →`;
+  return p.external
+    ? <a className="btn s" href={p.url} target="_blank" rel="noopener noreferrer">{label}</a>
+    : <Link className="btn s" href={`/projects/${p.slug}`}>{label}</Link>;
+}
+
 export default function ProjectPage({ params }) {
   const list = site.projects;
   const k = list.findIndex((x) => x.slug === params.slug);
-  if (k < 0) notFound();
+  if (k < 0 || list[k].external) notFound();
   const p = list[k], prev = list[k - 1], next = list[k + 1];
   return (
     <article className="study"><div className="wrap">
@@ -22,6 +29,7 @@ export default function ProjectPage({ params }) {
       <span className="tag" style={{ display: 'block', marginBottom: 12 }}>{p.tag}</span>
       <h1>{p.title}</h1>
       <p className="lead">{p.intro}</p>
+      {p.url && <p style={{ margin: '28px 0 0' }}><a className="btn p" href={p.url} target="_blank" rel="noopener noreferrer">{p.cta || 'Open project'} ↗</a></p>}
       <dl className="meta">{p.meta.map(([a, b]) => <div key={a}><dt>{a}</dt><dd>{b}</dd></div>)}</dl>
       {p.chips && <><h2 className="mini">What I worked on</h2><ul className="chips">{p.chips.map((c) => <li key={c}>{c}</li>)}</ul></>}
       {p.embed && (
@@ -42,8 +50,8 @@ export default function ProjectPage({ params }) {
           <div>{Array.isArray(b) ? <ul>{b.map((x) => <li key={x}>{x}</li>)}</ul> : <p>{b}</p>}</div></section>))}
       </div>
       <div className="pn">
-        {prev ? <Link className="btn s" href={`/projects/${prev.slug}`}>← {prev.title}</Link> : <span />}
-        {next ? <Link className="btn s" href={`/projects/${next.slug}`}>{next.title} →</Link> : <Link className="btn p" href="/#contact">Get in touch</Link>}
+        {prev ? <PN p={prev} dir="prev" /> : <span />}
+        {next ? <PN p={next} dir="next" /> : <Link className="btn p" href="/#contact">Get in touch</Link>}
       </div>
     </div></article>
   );

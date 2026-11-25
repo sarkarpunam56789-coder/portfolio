@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ProjectCard from '../components/ProjectCard';
 import ResumeSection from '../components/ResumeSection';
 import { site } from '../content/site';
@@ -9,21 +10,23 @@ export default function Home() {
       <section className="hero"><div className="wrap hgrid">
         <div>
           <p className="avail">{hero.badge}</p>
-          <h1>{hero.title}</h1>
+          <h1>{hero.title.split(' | ').map((t, i) => (i ? [<span key="s" className="pipe" aria-hidden="true"> | </span>, t] : t)).flat()}</h1>
           <p className="lead">{hero.text}</p>
           <div className="cta">
             <a className="btn p" href="/projects/scratchly-crm-dashboard">View Scratchly case study</a>
             <a className="btn s" href={site.resume.file} download={site.resume.downloadName}>Download resume</a>
           </div>
         </div>
-        <aside className="ledger" aria-label="Internship summary">
-          <h2>{hero.ledgerTitle}</h2><p>{hero.ledgerText}</p>
-          <ul className="chips">{hero.ledger.map((c) => <li key={c}>{c}</li>)}</ul>
-        </aside>
+        <figure className="portrait">
+          <div className="pframe">
+            <Image src={hero.photo.src} alt={hero.photo.alt} width={hero.photo.w} height={hero.photo.h} sizes="(max-width:900px) 70vw, 380px" priority />
+          </div>
+          <figcaption><b>{hero.photoCaption}</b><span>{hero.photoRole}</span></figcaption>
+        </figure>
       </div></section>
 
       <section className="sec" id="work"><div className="wrap">
-        <div className="head"><h2>Selected work</h2><p>One internship project and two self-initiated concepts.</p></div>
+        <div className="head"><h2>Selected work</h2><p>Selected UI/UX and product design projects.</p></div>
         <div className="grid">{site.projects.map((p, i) => <ProjectCard key={p.slug} p={p} featured={i === 0} />)}</div>
       </div></section>
 

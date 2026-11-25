@@ -4,8 +4,8 @@
 // ======================================================================
 export const site = {
   name: 'Punam Sarkar',
-  title: 'Punam Sarkar — UI/UX Designer, open to paid internships',
-  description: 'UI/UX designer with a 3-month internship at Scratchly designing CRM and dashboard interfaces. Available for paid UI/UX internships and junior roles.',
+  title: 'Punam Sarkar — UI/UX Designer | Product Designer',
+  description: 'UI/UX Designer and Product Designer designing CRM, dashboard and product interfaces, with experience at Scratchly and a product design case study, EarthPulse AI. Open to UI/UX Designer and Product Designer roles.',
   email: 'sarkarpunam56789@gmail.com',
   linkedin: 'https://linkedin.com/in/punamsarkar',
   behance: 'https://behance.net/punamsarkar3',
@@ -13,20 +13,20 @@ export const site = {
   resume: { file: '/resume.pdf', downloadName: 'Punam_Sarkar_UIUX_Resume.pdf' },
 
   hero: {
-    badge: 'Available for paid UI/UX internships and junior roles',
-    title: 'UI/UX designer for CRM, dashboards and product interfaces.',
-    text: 'I’m Punam Sarkar. I spent three months as a UX/UI Design Intern at Scratchly, designing CRM workflows, dashboards and inventory screens for a real product. Google UX Design certified. I work in Figma.',
-    ledgerTitle: 'Scratchly internship',
-    ledgerText: 'Jun–Aug 2026 · 3 months · UX/UI Design Intern. Designed:',
-    ledger: ['Leads', 'Deals', 'Activities', 'Messages', 'Reports', 'Team workflows', 'Inventory management', 'Landing page', 'User flows'],
+    badge: 'Open to UI/UX Designer and Product Designer roles',
+    title: 'UI/UX Designer | Product Designer',
+    text: 'I’m Punam Sarkar. I design CRM workflows, dashboards and product interfaces in Figma, and I’ve worked on a real product at Scratchly. Google UX Design certified.',
+    photo: { src: '/images/punam-profile.jpg', alt: 'Portrait of Punam Sarkar', w: 900, h: 1200 },
+    photoCaption: 'Punam Sarkar',
+    photoRole: 'UI/UX Designer | Product Designer',
   },
 
   about: {
     title: 'Thoughtful design, driven by curiosity.',
     paragraphs: [
       'I’m Punam, a UX/UI designer who enjoys making digital products easier to understand and use.',
-      'During my three-month internship at Scratchly, I worked on CRM workflows, dashboards, inventory management interfaces, landing pages and user flows. That experience showed me how design decisions connect user needs with business requirements.',
-      'I enjoy exploring problems, organizing information and turning ideas into clear, functional interfaces. I’m still growing my skills in UX, UI and product design, and I’m looking for a paid internship or junior role where I can do that on a real product team.',
+      'At Scratchly, I worked for three months on CRM workflows, dashboards, inventory management interfaces, landing pages and user flows. That experience showed me how design decisions connect user needs with business requirements.',
+      'I enjoy exploring problems, organizing information and turning ideas into clear, functional interfaces. I’m still growing my skills in UX, UI and product design, and I’m looking for a UI/UX Designer or Product Designer role where I can do that on a real product team.',
     ],
   },
 
@@ -50,8 +50,8 @@ export const site = {
   certificates: [{ name: 'Google UX Design Professional Certificate', by: 'Coursera', when: 'November 2025' }],
 
   contact: {
-    title: 'Hire me for a paid UI/UX internship',
-    text: 'I’m available for paid UI/UX internships and junior designer roles. Email me, find me on LinkedIn or Behance, or read my resume.',
+    title: 'Looking for a UI/UX or Product Designer?',
+    text: 'I’m looking for UI/UX Designer and Product Designer roles, and I’m also open to suitable internship opportunities. Email me, find me on LinkedIn or Behance, or read my resume.',
   },
 
   // ---------------------------------------------------------------
@@ -61,7 +61,8 @@ export const site = {
   // ---------------------------------------------------------------
   projects: [
     {
-      slug: 'scratchly-crm-dashboard', title: 'Scratchly CRM & Dashboard', tag: 'Internship project · Web app',
+      slug: 'scratchly-crm-dashboard', title: 'Scratchly CRM & Dashboard', tag: 'Live project · Web app',
+      url: 'https://www.scratchlycrm.app/', cta: 'View live project',
       card: 'Screens and flows for Leads, Deals, Activities, Messages, Reports, Team workflows and inventory management, designed during my 3-month internship.',
       intro: 'A real product project from my UX/UI design internship at Scratchly: CRM workflows, dashboards and business management interfaces that simplify complex operations.',
       meta: [['Role', 'UX/UI Design Intern'], ['Duration', 'Jun–Aug 2026 (3 months)'], ['Tools', 'Figma, Notion'], ['Type', 'Internship project']],
@@ -79,29 +80,12 @@ export const site = {
       ],
     },
     {
-      slug: 'earthpulse-ai', title: 'EarthPulse AI', tag: 'Self-initiated concept · Web platform · Version 2.0',
-      card: 'A sustainability platform concept that turns environmental data into one Earth score and a clear next action. Includes an interactive Version 2.0 prototype.',
-      intro: 'EarthPulse AI is a self-initiated product concept that makes sustainability insights more accessible through AI. Version 1 covered brand, landing page and dashboard. Version 2.0 rebuilds the idea around one Earth score and a next best action.',
-      meta: [['Role', 'UX/UI Designer'], ['Version 1', '2 months, Figma'], ['Version 2.0', 'Interactive prototype'], ['Tools', 'Figma, Claude AI']],
-      cover: { src: '/images/ep-dashboard.jpg', w: 1091, h: 748 },
-      embed: { src: '/earthpulse-v2.html', title: 'EarthPulse AI Version 2.0 interactive case study and prototype', heading: 'Version 2.0: interactive case study and prototype', text: 'Connect sources, see a score, add the recommended action and try the AI Coach. All numbers are illustrative sample data and the coach uses scripted replies.' },
-      images: [
-        { src: '/images/ep-hero.jpg', alt: 'EarthPulse AI version 1 landing page hero with headline and two buttons over a green globe photo', caption: 'Version 1: landing page hero', w: 1091, h: 639 },
-        { src: '/images/ep-journey.jpg', alt: 'Five-stage user journey: Discovers, Landing page visitor, Signs up and connects accounts, First dashboard view, Week 3 habit formed', caption: 'Version 1: concept user journey for the persona Maya', w: 1091, h: 411 },
-        { src: '/images/ep-dashboard.jpg', alt: 'EarthPulse version 1 dashboard with sidebar, summary cards, carbon chart, Earth score ring, and goals and community panels', caption: 'Version 1: dashboard (sample data)', w: 1091, h: 748 },
-        { src: '/images/ep-steps.jpg', alt: 'Three setup steps: Connect your data, See your impact, Act on AI insights', caption: 'Version 1: three-step setup', w: 1091, h: 374 },
-      ],
-      sections: [
-        ['Overview', 'EarthPulse AI is a concept platform that explores how artificial intelligence can support sustainability by making environmental insights accessible and actionable. The goal was a modern digital experience that explains complex information simply.'],
-        ['The challenge', 'Sustainability platforms often present large amounts of technical information that can feel overwhelming. The challenge was to design an experience that feels approachable while staying credible and clear.'],
-        ['Goals', ['Create a modern AI-focused brand identity', 'Present sustainability insights in an easy-to-understand format', 'Design an engaging landing page', 'Build trust through clear communication and visual hierarchy']],
-        ['Process', 'I researched sustainability-focused platforms and AI products to understand common design patterns and user expectations. I then created wireframes, explored visual directions and developed the final interface. To plan the experience, I mapped a concept user journey for a persona, Maya, from discovering the product to forming a habit in week three. The persona is a concept based on my review of existing tools, not on interviews.'],
-        ['Design decisions', ['One score: a single 0–100 Earth score answers “how am I doing?” before showing detail.', 'Next best action: a recommendation next to the score, with a “Why this?” explanation.', 'Three-step setup: connect your data, see your impact, act on AI insights, with a privacy panel before any data is requested.', 'Deep green with separate data colours, and 44px minimum tap targets.']],
-        ['What changed in Version 2.0', ['Removed invented statistics, testimonials and unproven research claims.', 'Added a next best action, onboarding, an AI Coach and a mobile dashboard.', 'Fixed contradictory dashboard data and inconsistent labels.']],
-        ['Information architecture', ['Dashboard: Overview, Carbon tracker, Water usage, Waste tracking, Sustainability score', 'My goals: Goals, Achievements, Milestones, Eco challenge', 'Chat assistant: AI coach, Action plans, Recommendations, Insights feed', 'Community: Leaderboard, Team challenges, Friends, Local groups', 'Account: Report and export, Integration, Settings, Billing']],
-        ['What I would test next', ['Can a new user connect a source and see a score quickly?', 'Do users understand what the Earth score means?', 'Which suggested action do people choose first?']],
-        ['A note on the data', 'This is a concept and has not been tested with users. All numbers shown are illustrative sample data, not real user or environmental data.'],
-      ],
+      slug: 'earthpulse-ai', external: true,
+      title: 'EarthPulse AI — Product Design Case Study', tag: 'Product design case study · Web platform',
+      url: 'https://earthpulse-ai-product-design-case-s-psi.vercel.app/', cta: 'View case study',
+      card: 'An India-first sustainability platform designed to help individuals understand and improve their environmental impact through carbon, water and waste tracking, personalized insights and sustainable actions.',
+      chips: ['Carbon tracking', 'Water tracking', 'Waste tracking', 'Personalized insights', 'Sustainable actions'],
+      highlights: ['Product design', 'UX thinking', 'Problem-solving'],
     },
     {
       slug: 'daily-habit-journal', title: 'Daily Habit Journal', tag: 'Self-initiated concept · Mobile app',
